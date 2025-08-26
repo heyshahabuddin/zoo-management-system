@@ -11,7 +11,6 @@ void main(List<String> arguments) {
   ];
 
   for (var animal in zoo) {
-
     print("-------- $animal ----------");
     print("Animal Name: ${animal.getName()}");
 
