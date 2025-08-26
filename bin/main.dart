@@ -5,12 +5,14 @@ import 'package:dart_project_03_zoomanagementsystem/parrot.dart';
 
 void main(List<String> arguments) {
   List<Animal> zoo = [
-    Lion("Leo", 25.5),
-    Elephant("Ella", 150.0),
-    Parrot("Polly", 50)
+    Lion("Mufasa", 22.0),
+    Elephant("Isilo", 230.0),
+    Parrot("Indigo", 65)
   ];
 
   for (var animal in zoo) {
+
+    print("-------- $animal ----------");
     print("Animal Name: ${animal.getName()}");
 
     if (animal is Lion) {
@@ -21,7 +23,6 @@ void main(List<String> arguments) {
       print("Vocabulary Size: ${animal.vocabularySize} words");
     }
 
-    print("Sound: ${animal.makeSound()}");
-    print("-------------------------");
+    print("Sound: ${animal.makeSound()}\n");
   }
 }
